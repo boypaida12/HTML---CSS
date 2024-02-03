@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	font-family: 'Cutive Mono', monospace;
+}
+
+h2 {
+	font-size:35px;
+/*	opacity: 0.8;*/
+}
+
+.header {
+	height: 200px;
+	background-color: #f2e77e;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header h1, p {
+	opacity: 0.8;
+}
+
+.nav {
+	height: 40px;
+	background-color: #030503;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+.nav li {
+	margin: 0 0 0 40px;
+	list-style: none;
+}
+
+.nav a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 18px;
+	opacity: 0.7;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+a[href*='Git']:hover {
+	color: #ea1178;
+	opacity: 1;
+}
+
+a[href*='LinkedIn']:hover {
+	color: #0561f8;
+	opacity: 1;
+}
+
+a[href*='Portfolio']:hover {
+	color: #e74c07;
+	opacity: 1;
+}
+
+a[href*='Email']:hover {
+	color: #308e36;
+	opacity: 1;
+}
+
+img {
+	box-shadow:0 5px 20px 0 rgba(0, 0, 0, 0.4) ;
+	border-radius: 10px;
+}
+
+.img-cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.img-cards img {
+	margin-bottom: 50px;
+}
+
+.about-me {
+	background-color: #efefe9;
+	padding: 20px 0 0 20px;
+}
+
+.silence {
+	font-size: 20px;
+}
+
+.about-me h2 {
+	color: #e74c07;
+}
+
+h3 {
+	color: #ea1178;
+}
+
+.about-me p, .bigger-picture p{
+	padding: 10px 10px 10px 0;
+	font-weight: bold;
+	opacity: 0.7;
+
+}
+
+.bigger-picture{
+	background-color:#e5f6f6;
+	height: inherit;
+	width: 100%;
+	padding: 20px 0 30px 20px;
+}
+
+.bigger {
+	color: #0561f8;
+}
+
+.takeover {
+	padding-top: 10px;
+	color: #308e36;
+}
+
+.body {
+	display: flex;
+}
+
+.footer-container {
+	background-color: #030503;
+	height: 300px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	text-align: center;
+	padding-top: 60px;
+	padding-left: 30px;
+}
+
+input[type=email] {
+	width: 200px;
+	padding: 3px;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input[type=button] {
+	padding: 5px;
+	background-color: #308e36;
+	border-radius: 5px;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 15px;
+	font-weight: bold;
+}
+input[type=button]:hover {
+	cursor: pointer;
+	background-color: #28762d;
+}
+
+h4 {
+	color: whitesmoke;
+	font-size: 19px;
+	opacity: 0.7;
+}
+
+.partners, .socials, .support {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	padding-left: 50px;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.partners a, .socials a, .support a{
+	font-weight: bold;
+	padding-top: 12px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: whitesmoke;
+	opacity: 0.7;
+}
+
+.partners a:hover {
+	color: #0561f8;
+	opacity: 1;
+}
+
+.socials a:hover {
+	color: #e74c07;
+	opacity: 1;
+}
+
+.support a:hover {
+	color: #ea1178;
+	opacity: 1;
+}

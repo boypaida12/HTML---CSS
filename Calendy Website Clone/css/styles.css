@@ -1,0 +1,98 @@
+/* * {
+    border: 2px solid red;
+    overflow-x: hidden;
+} */
+
+.nav-link:hover {
+    color: #006bff !important;
+}
+
+.logos-img {
+    margin-right: 100px;
+}
+
+.outline-override:hover {
+    background-color: transparent !important;
+    color: #006bff !important;
+    border: 2px solid #006bff;
+    transition: border 300ms ease-in-out;
+}
+
+.get-started {
+    background-color: rgba(185, 223, 233, 0.116);;
+}
+
+.navbar {
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.69);
+}
+
+.bg-fixed {
+    background: url(../images/Calendly\ fixed-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 450px;
+}
+
+.img-cards {
+    box-shadow: 8px 8px 18px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 8px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 18px -9px rgba(0,0,0,0.75);
+}
+
+footer {
+    height: 84vh;
+}
+
+.footer-links {
+    color: grey;
+}
+
+.social {
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.social:hover {
+    opacity: 0.7;
+}
+
+.content-fit {
+    width: fit-content;
+}
+
+.logo-img {
+    border-bottom: 2px solid #006aff21;
+    padding-bottom: 5px;
+    aspect-ratio: 25/10;
+    width: 20vw;
+    min-width: 110px !important;
+    white-space: nowrap;
+    margin-bottom: 50px !important;
+}
+
+
+.slider {
+    width: 60vw;
+    height: 26vh;
+    /* background-color: rgb(202, 48, 48); */
+    overflow-x: hidden;
+}
+
+.slide-track {
+    height: 100%;
+    display: flex;
+    gap: 2.5rem;
+    animation: scrolling 20s linear infinite;
+} 
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(5vw);
+    }
+    100% {
+        transform: translateX(-160vw);
+    }
+}
+

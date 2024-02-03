@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mixed-blend-mode</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+		h1 {
+			color: darkred;
+			font-size: 15vmin;
+			font-family: 'Fjalla One', sans-serif;
+		}
+		body {
+			background-image: linear-gradient(to bottom, black 50%, white 50%);
+		}
+
+		body::after {
+			content: '';
+			display: block;
+			min-height: 100vh;
+		}
+
+		.child {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+
+			position: sticky;
+			top: 1vmin;
+
+			mix-blend-mode:invert;
+		}
+	</style>
+</head>
+<body>
+	<div class="child">
+		<h1>NETFLIX</h1>
+	</div>
+</body>
+</html>

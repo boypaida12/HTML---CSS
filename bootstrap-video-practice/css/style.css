@@ -1,0 +1,16 @@
+.col-1 {
+	background-color: hotpink;
+	color: whitesmoke;
+}
+
+.nested-col-1{
+	background-color: orangered;
+}
+.col-2 {
+	background-color: orangered;
+	color: whitesmoke;
+}
+
+.nested-col-2 {
+	background-color: hotpink;
+}

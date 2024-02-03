@@ -1,0 +1,163 @@
+@font-face {
+    font-family: kreditFront;
+    src: url(fonts/kredit\ front.ttf);
+}
+
+@font-face {
+    font-family: kreditBack;
+    src: url(fonts/kredit\ back.ttf);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #162a9ee3 0%, #a60a90 45%, #6b1c6f 100%);
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    height: 290px;
+    color: rgba(252, 252, 252, 0.868);
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 1500px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+    background-image:linear-gradient(45deg, #293266 0%, #a60a90 25%, #6b1c6f 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1.25rem;
+    z-index: 1;
+    backface-visibility: hidden;
+    font-family: 'kreditFront', sans-serif;
+    border-radius: 15px;
+    /* font-weight: bold; */
+} 
+
+.card-front::after, .card-back::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/map.png);
+    background-size: contain;
+    z-index: -1;
+}
+
+.content-container {
+    position: relative;
+    z-index:  1;
+    padding-inline: 1.25rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+.content-container::after{
+    position: absolute;
+    content: "";
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e1e2e209;
+	border-radius: 1em;
+	backdrop-filter: blur(5px) ;
+	z-index: -1;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ 
+ .middle {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     font-size: 2.5rem;
+     gap: 2.25rem;
+     width: fit-content;
+     margin: 3rem auto 1.5rem;
+ }
+
+ .bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+ .bottom .date {
+    text-align: end;
+ }
+
+ .bottom h1 {
+    font-size: 1.25rem;
+    margin-bottom: .75rem;
+ }
+
+.bar {
+    background: rgba(34, 34, 34, 0.977);
+    height: 4rem;
+    margin-inline: -1.25rem;
+    margin-top: 1.5rem;
+}
+
+.back-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1.5rem;
+}
+
+.content-grid p {
+    align-self: center;
+}
+
+.back-middle {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.back-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    font-family: 'kreditBack', sans-serif !important;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+

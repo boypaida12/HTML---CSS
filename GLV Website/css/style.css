@@ -1,0 +1,40 @@
+li {
+    list-style: none;
+    font-size: 50px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.static-txt {
+    font-size: 30px;
+}
+
+ .word-change {
+    position: relative;
+}
+
+.word-change::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid red;
+    animation: typing 1s steps(8) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+    }
+}

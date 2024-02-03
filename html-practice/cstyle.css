@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.navlist ul{
+	background-color: rgb(0, 0, 0);
+	text-align: left;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.navlist li {
+	padding: 5px;
+	margin-left: 40px;
+}
+
+.navlist a {
+	color: whitesmoke;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 30px;
+	/*padding: 40px;*/
+	opacity: 0.6;
+}
+
+.navlist a:hover {
+	color: darkgreen;
+	font-weight: bold;
+}
+
+#legend{
+	/*font-size: 30px;*/
+	margin-left: -30px;
+	font-weight: 700;
+
+}
+
+form {
+	background-color: black;
+	padding: 30px;
+}
+
+input {
+	padding: 8px;
+	border-radius: 4px;
+	border-color: darkgreen;
+	opacity: 0.8;
+
+}
+
+#submit {
+	margin-left: 20px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: darkgreen;
+	/*font-size: 15px;*/
+}
+
+#submit:hover {
+	color: whitesmoke;
+	background-color: darkgreen;
+}
+
+#email {
+	width: 200px;
+	height: 18px;
+	font-family: monospace;
+}
+
+
+main {
+	font-family: 'Noto Sans', sans-serif;
+	background-color: rgb(21, 71, 52, 0.9);
+	background-image: url('https://wallpaperaccess.com/full/3024080.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: whitesmoke;
+	text-align: right;
+	padding: 30px;
+	height: 120vh;
+	/*margin-top: 50px;*/
+} 
+
+/*main {
+	
+	height: 200px;
+	width: 800px;
+}
+*/
+h1 {
+	font-size: 100px;
+	opacity: 0.7;
+	padding-top: 200px;
+	letter-spacing: 5px;
+}
+
+p {
+	font-size: 40px;
+	/*font-weight: bold;*/
+	opacity: 0.8;
+
+}
+
+em {
+	color: darkgreen;
+
+}
+
+span{
+	color: darkgreen;
+}
+
+img[src*= 'down'] {
+	height: 80px;
+	opacity: 0.65;
+	padding-top: 30px;
+}
+
+img[src*= 'down']:hover {
+	height: 100px;
+}
+
+.middle {
+	background-color: black;
+	opacity: 0.9;
+	height: 100px;
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 30px;
+
+}
+
+.middle a {
+	text-decoration: none;
+	border: 1px solid darkgreen;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 10px;
+	color: whitesmoke;
+	opacity: 0.7;
+	background-color: darkgreen;
+}
+
+.middle a:hover {
+	background-color: black;
+}
+/*#E3D709*/
+
